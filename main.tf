@@ -18,11 +18,15 @@ resource "datadog_dashboard" "example" {
   layout_type = "ordered"
 
   widget {
-    line {
+    timeseries_definition {
       title = "Sample Metric"
       request {
         q = "avg:system.cpu.user{*}"
       }
     }
   }
+}
+
+output "dashboard_id" {
+  value = datadog_dashboard.example.id
 }
