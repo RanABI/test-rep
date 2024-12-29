@@ -10,6 +10,7 @@ terraform {
 provider "datadog" {
   api_key = var.DATADOG_API_KEY
   app_key = var.DATADOG_APP_KEY
+  api_url = var.DATADOG_API_URL
 }
 
 resource "datadog_dashboard" "example" {
