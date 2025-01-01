@@ -14,7 +14,7 @@ provider "datadog" {
 }
 
 resource "datadog_dashboard" "example" {
-  title       = "[TEST] Test-Dashboard"
+  title       = "[TEST] Test-Dashboard2"
   description = "A sample dashboard created using Terraform"
   layout_type = "ordered"
 
